@@ -1,5 +1,6 @@
 package com.trete.cs20162.aula02;
 
+import static junit.framework.Assert.assertEquals;
 import org.junit.Test;
 
 public class PrimoTest {
@@ -11,5 +12,15 @@ public class PrimoTest {
     @Test(expected = IllegalArgumentException.class)
     public void primoMenorQue1Invalido(){
         Matematica.verificaPrimo(0);
+    }
+    
+    @Test
+    public void valorArbitrarioQueFunciona(){
+        Matematica.verificaPrimo(13);
+    }
+    
+    @Test
+    public void valorArbitrarioQueNaoFunciona(){
+        assertEquals(true, Matematica.verificaPrimo(13));
     }
 }
