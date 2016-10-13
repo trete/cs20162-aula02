@@ -141,7 +141,8 @@ public class Matematica {
         while (i <= (numero - 1)) {
             if (numero % i == 0) {
                 return false;
-            }            
+            }
+            i++;
         }
         return true;
     }

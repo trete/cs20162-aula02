@@ -11,6 +11,6 @@ public class NumeroHarmonicoTest {
     
     @Test
     public void valorArbitrarioDeTeste(){
-        assertEquals(3 / 2, Matematica.numeroHarmonico(2), 0.0001);
+        assertEquals(3. / 2., Matematica.numeroHarmonico(2), 0.0001);
     }
 }

@@ -16,11 +16,11 @@ public class PrimoTest {
     
     @Test
     public void valorArbitrarioQueFunciona(){
-        Matematica.verificaPrimo(13);
+        assertEquals(true, Matematica.verificaPrimo(13));
     }
     
     @Test
     public void valorArbitrarioQueNaoFunciona(){
-        assertEquals(true, Matematica.verificaPrimo(13));
+        assertEquals(false, Matematica.verificaPrimo(15));
     }
 }
