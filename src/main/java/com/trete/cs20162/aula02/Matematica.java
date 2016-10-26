@@ -206,7 +206,7 @@ public abstract class Matematica {
 * primeiroNumero e segundoNumero.
 */
     public static int maiorDivisorComum(final int primeiroNumero,
-            final int segundoNumero) {
+            final int segundoNumero)throws IllegalArgumentException {
         if (segundoNumero > primeiroNumero) {
             throw new IllegalArgumentException("o primeiro parâmetro deve ser "
                     + "maior ou igual ao segundo");

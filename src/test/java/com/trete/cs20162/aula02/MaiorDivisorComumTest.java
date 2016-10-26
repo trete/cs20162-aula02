@@ -7,12 +7,12 @@ import org.junit.Test;
 public class MaiorDivisorComumTest {
     @Test(expected = IllegalArgumentException.class)
     public void maiorDivisorComumComAMaiorQueB(){
-        Matematica.maiorDivisorComum(400, 2);
+        Matematica.maiorDivisorComum(2, 400);
     }
     
     @Test (expected = IllegalArgumentException.class)
     public void segundoNumeroNegativoInvalido(){
-        Matematica.maiorDivisorComum(30, -5);
+        Matematica.maiorDivisorComum(-5, 30);
     }
     
     @Test(expected = IllegalArgumentException.class)
@@ -22,6 +22,6 @@ public class MaiorDivisorComumTest {
     
     @Test
     public void valorDeTesteArbitrario(){
-        assertEquals(Matematica.maiorDivisorComum(18, 54), 18);
+        assertEquals(18, Matematica.maiorDivisorComum(54, 18));
     }
 }
