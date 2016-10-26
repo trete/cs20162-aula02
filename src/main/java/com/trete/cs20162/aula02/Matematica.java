@@ -160,7 +160,7 @@ public abstract class Matematica {
         }
 
         int centena = numero / LIMIAR_CENTENA;
-        int dezena = (numero - LIMIAR_CENTENA * indice) / LIMIAR_DEZENA;
+        int dezena = (numero - LIMIAR_CENTENA * centena) / LIMIAR_DEZENA;
         int unidade = numero % LIMIAR_DEZENA;
 
         return centena * centena * centena + dezena * dezena * dezena
