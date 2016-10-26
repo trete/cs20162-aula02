@@ -181,7 +181,7 @@ public abstract class Matematica {
 
         int indice = PRIMEIRO_INTEIRO_MAIOR_QUE_UM;
 
-        while (i <= (numero - 1)) {
+        while (indice <= (numero - 1)) {
             if (numero % indice == LIMIAR_ENTRE_POSITIVOS_E_NEGATIVOS) {
                 return false;
             }
